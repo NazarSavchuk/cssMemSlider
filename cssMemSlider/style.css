@@ -67,9 +67,8 @@ img {
 
   .slider__navigation {
       position: absolute;
-      bottom: 25px;
+      bottom: 15px;
       right: 0;
-
   }
   .slider__navigation > a:active {
     transform: scale(1.1);
@@ -80,3 +79,22 @@ img {
   .slider__navigation > a:hover {
     background: #a7aab2;
   }
+
+@media screen and (max-width: 768px) {
+    .slider { 
+        width: 400px;
+        height: 370px;
+    }
+    .slider__content > div {
+        height: 340px;
+    }
+    .slider__navigation > a  {
+        margin: 0 5px;
+    }
+    .slider__navigation {
+        position: absolute;
+        right: 50%;
+        bottom: 0;
+        transform: translateX(50%);
+    }
+}
