@@ -98,3 +98,23 @@ img {
         transform: translateX(50%);
     }
 }
+
+@media screen and (max-width: 430px) {
+    .slider { 
+        width: 270px;
+        height: 370px;
+    }
+    .slider__content > div {
+        height: 340px;
+    }
+    .slider__navigation > a  {
+        margin: 0;
+    }
+    .slider__navigation {
+        width: 200px;
+        position: absolute;
+        right: 50%;
+        bottom: 0;
+        transform: translateX(50%);
+    }
+}
